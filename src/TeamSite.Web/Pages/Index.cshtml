@@ -1,0 +1,67 @@
+@page
+@{
+    ViewData["Title"] = "Home";
+}
+@*
+    The home page: https://9082.firstpvrobotics.com/
+    Everything below is plain HTML. Change the words between the tags.
+    The notes in <!-- --> tell you what goes where; visitors don't see them.
+*@
+
+<section class="team-hero">
+    <div class="container hero-grid">
+        <div>
+            <!-- FTC or FRC, your team number, and the year you started. -->
+            <span class="eyebrow">FRC Team #9082</span>
+            <!-- Your team's name. -->
+            <h1>No Limit Robotics</h1>
+            <!-- One sentence about what your team is about. -->
+            <p class="tagline">Departments of experts, one big team, no member cap.</p>
+            <!-- Short facts shown as bubbles. Add or delete <li> lines. -->
+            <ul class="chips">
+                <li>PVHS's only FRC team</li>
+                <li>No member cap</li>
+                <li>Five departments</li>
+            </ul>
+        </div>
+        <!-- Your logo, in wwwroot/images/. Use background: #000000 for logos drawn on black. -->
+        <div class="hero-logo" style="background: #ffffff">
+            <img src="/images/no-limit-logo.png" alt="No Limit Robotics logo" />
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container story">
+        <!-- Your team's story. One <p> per paragraph. -->
+        <div class="prose">
+            <p>Pleasant Valley CSD sponsors one FIRST Robotics Competition team: #9082 No Limit Robotics. The team has access to classrooms, computers, printers, software, the wood shop and the metal shop.</p>
+            <p>There's no member cap, so anyone can join and see if the team is right for them. No Limit is organized into departments, so there's a place for everyone to work on what they find interesting. Follow our social media to keep up with the season and our outreach.</p>
+        </div>
+        <aside class="card connect">
+            <h3>Connect with No Limit</h3>
+            <!-- Your team's email address, in both places on the next line. -->
+            <p><a href="mailto:FRC9082@gmail.com">FRC9082@gmail.com</a></p>
+            <!-- Links to your team's accounts. -->
+            <ul class="pills">
+                <li><a href="https://www.instagram.com/frc_9082/" rel="noopener" target="_blank">Instagram</a></li>
+                <li><a href="https://www.tiktok.com/@@frc.9082.no.limit" rel="noopener" target="_blank">TikTok</a></li>
+                <li><a href="https://www.twitter.com/frc9082" rel="noopener" target="_blank">X</a></li>
+            </ul>
+        </aside>
+    </div>
+</section>
+
+<!-- A group of cards. Copy the whole <section> to add another group; copy one card's <div> to add a card. -->
+<section class="section section--alt">
+    <div class="container">
+        <div class="section-head"><span class="eyebrow">How we work</span><h2>Departments</h2></div>
+        <div class="grid grid--3">
+            <div class="card item"><h3>Communications</h3><p class="muted">The behind-the-scenes crew for media and public relations. They run social media, the website, team apparel and more. Interested in marketing? This is your department.</p></div>
+            <div class="card item"><h3>Programming</h3><p class="muted">Writes the Java and Python that make the robot work, and fixes bugs when something goes wrong. If you like to code, start here.</p></div>
+            <div class="card item"><h3>Design</h3><p class="muted">Designs the robot and every part on it in CAD. Without design, there's no robot.</p></div>
+            <div class="card item"><h3>Mechanical</h3><p class="muted">Builds the robot with design and programming, using the shop machines plus wiring, soldering and manufacturing.</p></div>
+            <div class="card item"><h3>Stands Crew</h3><p class="muted">Every member is on Stands Crew, keeping the energy up at competition by cheering for the drive team, meeting other teams and making signs.</p></div>
+        </div>
+    </div>
+</section>
