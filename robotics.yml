@@ -6,3 +6,8 @@ apps:
     port: 1
     health: /healthz
     public: true    # live site is open to everyone; the preview always needs a mentor password
+  # Limitless Scrum: has its own sign-in, so live is open like the site.
+  - path: /scrum
+    port: 2
+    health: /healthz
+    public: true
