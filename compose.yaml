@@ -14,7 +14,7 @@ services:
   # tag after "#" in a pull request here. Its data is in this team's database
   # (schema "scrum"); uploaded photos are in the scrum-uploads volume.
   scrum:
-    build: https://github.com/MeckMan2025/Limitless-Scrum.git#v1.0.0
+    build: https://github.com/MeckMan2025/Limitless-Scrum.git#v1.1.0
     ports:
       - "127.0.0.1:${PORT_2}:8080"
     environment:
