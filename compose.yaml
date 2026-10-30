@@ -8,3 +8,25 @@ services:
     environment:
       ASPNETCORE_ENVIRONMENT: Production
     restart: unless-stopped
+
+  # Limitless Scrum, the team's boards and calendar, at /scrum (robotics.yml).
+  # Built from its own repository at a release tag: to update it, change the
+  # tag after "#" in a pull request here. Its data is in this team's database
+  # (schema "scrum"); uploaded photos are in the scrum-uploads volume.
+  scrum:
+    build: https://github.com/MeckMan2025/Limitless-Scrum.git#v1.0.0
+    ports:
+      - "127.0.0.1:${PORT_2}:8080"
+    environment:
+      BASE_PATH_1: ${BASE_PATH_2}
+      PGHOST: ${PGHOST}
+      PGPORT: ${PGPORT}
+      PGUSER: ${PGUSER}
+      PGPASSWORD: ${PGPASSWORD}
+      PGDATABASE: ${PGDATABASE}
+    volumes:
+      - scrum-uploads:/data/uploads
+    restart: unless-stopped
+
+volumes:
+  scrum-uploads:
